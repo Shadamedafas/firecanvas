@@ -1,0 +1,101 @@
+.firecanvas {
+	@include card;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 500px;
+	width: 850px;
+	margin-top: -250px;
+	margin-left: -450px;
+
+	.toolbar {
+		float: left;
+		height: 500px;
+		width: 50px;
+		background-color: $toolbar_background_color;
+		border-right: 1px solid darken($toolbar_background_color, 8%);
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.color-menu {
+			margin: 0 0 15px 0;
+			padding: 0 0 15px 0;
+			border-bottom: 1px solid darken($toolbar_background_color, 8%);
+
+			.color-square {
+				display: block;
+				margin-left: 10px;
+				margin-top: 10px;
+				border: 1px inset $toolbar_background_color;
+				@include border-radius(8px);
+				-webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3);
+				-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3);
+				box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.3);
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+
+				&:hover,
+				&.selected {
+					-webkit-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.4);
+					-moz-box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.4);
+					box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.4);
+				}
+
+				&.red {
+					background-color: $red;
+				}
+				&.blue {
+					background-color: $blue;
+				}
+				&.yellow {
+					background-color: $yellow;
+				}
+				&.orange {
+					background-color: $orange;
+				}
+				&.purple {
+					background-color: $purple;
+				}
+				&.green {
+					background-color: $green;
+				}
+				&.black {
+					background-color: $black;
+				}
+				&.white {
+					background-color: $white;
+				}
+			}
+		}
+
+		.file-menu .option{
+			margin-bottom: 10px;
+			margin-left: 10px;
+
+			button {
+				background: none;
+				border: none;
+				padding: 0;
+				width: 30px;
+				height: 30px;
+				cursor: pointer;
+				@include border-radius(2px);
+
+				&:hover {
+					border: 1px solid darken($toolbar_background_color, 8%);
+				}
+			}
+		}
+	}
+
+	.drawing-canvas {
+		float: right;
+		cursor: url(../assets/images/pencil.png), auto;
+	}
+}

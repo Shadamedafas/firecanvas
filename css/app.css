@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  background: url(../assets/images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+body {
+  background: none; }
+
+.firecanvas {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -border-radius: 2px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 500px;
+  width: 850px;
+  margin-top: -250px;
+  margin-left: -450px; }
+  .firecanvas .toolbar {
+    float: left;
+    height: 500px;
+    width: 50px;
+    background-color: #eeeeee;
+    border-right: 1px solid #dadada; }
+    .firecanvas .toolbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    .firecanvas .toolbar .color-menu {
+      margin: 0 0 15px 0;
+      padding: 0 0 15px 0;
+      border-bottom: 1px solid #dadada; }
+      .firecanvas .toolbar .color-menu .color-square {
+        display: block;
+        margin-left: 10px;
+        margin-top: 10px;
+        border: 1px inset #eeeeee;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        border-radius: 8px;
+        -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        width: 30px;
+        height: 30px;
+        cursor: pointer; }
+        .firecanvas .toolbar .color-menu .color-square:hover, .firecanvas .toolbar .color-menu .color-square.selected {
+          -webkit-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+          -moz-box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.4); }
+        .firecanvas .toolbar .color-menu .color-square.red {
+          background-color: #C94F4F; }
+        .firecanvas .toolbar .color-menu .color-square.blue {
+          background-color: #4F59C9; }
+        .firecanvas .toolbar .color-menu .color-square.yellow {
+          background-color: #FAE969; }
+        .firecanvas .toolbar .color-menu .color-square.orange {
+          background-color: #F29C07; }
+        .firecanvas .toolbar .color-menu .color-square.purple {
+          background-color: #A445ED; }
+        .firecanvas .toolbar .color-menu .color-square.green {
+          background-color: #82D93F; }
+        .firecanvas .toolbar .color-menu .color-square.black {
+          background-color: #222222; }
+        .firecanvas .toolbar .color-menu .color-square.white {
+          background-color: #ffffff; }
+    .firecanvas .toolbar .file-menu .option {
+      margin-bottom: 10px;
+      margin-left: 10px; }
+      .firecanvas .toolbar .file-menu .option button {
+        background: none;
+        border: none;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        -ms-border-radius: 2px;
+        border-radius: 2px; }
+        .firecanvas .toolbar .file-menu .option button:hover {
+          border: 1px solid #dadada; }
+  .firecanvas .drawing-canvas {
+    float: right;
+    cursor: url(../assets/images/pencil.png), auto; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Firecanvas</title>
+
+    <!-- Font -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+
+  <body>
+
+    <div class="firecanvas">
+      <div class="toolbar">
+        <ul class="color-menu">
+          <li class="color-square red"></li>
+          <li class="color-square blue"></li>
+          <li class="color-square yellow"></li>
+          <li class="color-square orange"></li>
+          <li class="color-square purple"></li>
+          <li class="color-square green"></li>
+          <li class="color-square black selected"></li>
+          <li class="color-square white"></li>
+        </ul>
+        <ul class="file-menu">
+          <li class="option">
+            <button type="button" id="clear">
+              <i class="fa fa-2x fa-trash-o"></i>
+            </button>
+          </li>
+          <li class="option">
+            <button type="button" id="save">
+              <i class="fa fa-2x fa-floppy-o"></i>
+            </button>
+          </li>
+          <li class="color-square white"></li>
+        </ul>
+      </div>
+      <canvas id="drawing" class="drawing-canvas" height="500" width="800"></canvas>
+    </div>
+    
+    <!-- Dependant JS -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/firebase/firebase.js"></script>
+    <script src="bower_components/blob/blob.js"></script>
+
+    <!-- App JS -->
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
